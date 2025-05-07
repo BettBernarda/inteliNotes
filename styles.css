@@ -1,0 +1,106 @@
+/* =============================
+   ESTILIZAÇÃO DO PROJETO
+   ============================= */
+
+   body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 900px; /* Aumenta a largura da área do projeto */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    margin: 0;
+    color: #007ACC;
+}
+
+#search {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#notes-container {
+    display: grid;
+    gap: 20px; /* Aumenta o espaço entre as caixinhas */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Aumenta o tamanho mínimo das caixinhas */
+}
+
+.note {
+    background-color: #fff;
+    padding: 20px; /* Aumenta o padding para deixar as caixinhas mais espaçosas */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra mais forte para destacar */
+    position: relative;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 300px; /* Largura máxima da caixa */
+    font-size: 16px; /* Aumenta o tamanho da fonte para mais legível */
+    max-height: 300px; /* Define o tamanho máximo da caixa */
+    overflow-y: auto; /* Torna a caixa rolável */
+}
+
+.note p {
+    margin: 0;
+    text-align: justify;
+}
+
+.note button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+#note-input {
+    flex: 1;
+    padding: 15px; /* Aumenta o padding para a caixa de entrada */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    min-height: 100px; /* Aumenta o tamanho da caixa de texto */
+    resize: none;
+    transition: height 0.2s ease;
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+}
+
+#add-note {
+    padding: 12px 24px; /* Aumenta o tamanho do botão */
+    background-color: #007ACC;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+#add-note:hover {
+    background-color: #005F99;
+}
+
+.copy-btn{
+    padding-right: 40px;
+}
